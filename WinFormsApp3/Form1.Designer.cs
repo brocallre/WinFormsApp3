@@ -35,6 +35,8 @@
             label3 = new Label();
             label4 = new Label();
             button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -42,7 +44,7 @@
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = null;
-            pictureBox1.Location = new Point(424, 325);
+            pictureBox1.Location = new Point(332, 352);
             pictureBox1.Margin = new Padding(7, 8, 7, 8);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(427, 525);
@@ -50,6 +52,8 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
+            pictureBox1.MouseEnter += pictureBox1_MouseEnter;
+            pictureBox1.MouseLeave += pictureBox1_MouseLeave;
             // 
             // label1
             // 
@@ -105,6 +109,26 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.Location = new Point(1299, 719);
+            button2.Name = "button2";
+            button2.Size = new Size(188, 58);
+            button2.TabIndex = 6;
+            button2.Text = "Github";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(1543, 719);
+            button3.Name = "button3";
+            button3.Size = new Size(293, 58);
+            button3.TabIndex = 7;
+            button3.Text = "배경 이미지 바꾸기";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
@@ -112,6 +136,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1943, 1230);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -135,5 +161,7 @@
         private Label label3;
         private Label label4;
         private Button button1;
+        private Button button2;
+        private Button button3;
     }
 }
