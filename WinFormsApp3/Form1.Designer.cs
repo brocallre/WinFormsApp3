@@ -42,9 +42,10 @@
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = null;
-            pictureBox1.Location = new Point(411, 236);
+            pictureBox1.Location = new Point(424, 325);
+            pictureBox1.Margin = new Padding(7, 8, 7, 8);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(176, 192);
+            pictureBox1.Size = new Size(427, 525);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -53,9 +54,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(612, 264);
+            label1.Location = new Point(982, 406);
+            label1.Margin = new Padding(7, 0, 7, 0);
             label1.Name = "label1";
-            label1.Size = new Size(43, 15);
+            label1.Size = new Size(108, 41);
             label1.TabIndex = 1;
             label1.Text = "한영탁";
             label1.Click += label1_Click;
@@ -63,9 +65,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(612, 291);
+            label2.Location = new Point(982, 479);
+            label2.Margin = new Padding(7, 0, 7, 0);
             label2.Name = "label2";
-            label2.Size = new Size(129, 15);
+            label2.Size = new Size(326, 41);
             label2.TabIndex = 2;
             label2.Text = "컴퓨터 sw 학과 재학생";
             label2.Click += label2_Click;
@@ -73,9 +76,10 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(612, 320);
+            label3.Location = new Point(982, 559);
+            label3.Margin = new Padding(7, 0, 7, 0);
             label3.Name = "label3";
-            label3.Size = new Size(113, 15);
+            label3.Size = new Size(280, 41);
             label3.TabIndex = 3;
             label3.Text = "yt2342@naver.com";
             label3.Click += label3_Click;
@@ -83,17 +87,19 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(612, 348);
+            label4.Location = new Point(982, 635);
+            label4.Margin = new Padding(7, 0, 7, 0);
             label4.Name = "label4";
-            label4.Size = new Size(94, 15);
+            label4.Size = new Size(229, 41);
             label4.TabIndex = 4;
             label4.Text = "010-8353-2342";
             // 
             // button1
             // 
-            button1.Location = new Point(612, 377);
+            button1.Location = new Point(982, 714);
+            button1.Margin = new Padding(7, 8, 7, 8);
             button1.Name = "button1";
-            button1.Size = new Size(113, 23);
+            button1.Size = new Size(274, 63);
             button1.TabIndex = 5;
             button1.Text = "배경색 바꾸기";
             button1.UseVisualStyleBackColor = true;
@@ -101,15 +107,18 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(1943, 1230);
             Controls.Add(button1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            Margin = new Padding(7, 8, 7, 8);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
